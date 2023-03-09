@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Poetry install",
+            "type": "python",
+            "request": "launch",
+            "module": "poetry",
+            "args": [
+                "install"
+            ],
+            "justMyCode": false,
+        },
+        {
+            "name": "Poetry update",
+            "type": "python",
+            "request": "launch",
+            "module": "poetry",
+            "args": [
+                "update"
+            ],
+            "justMyCode": false,
+        },
+    ]
+}
