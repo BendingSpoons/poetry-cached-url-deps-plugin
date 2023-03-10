@@ -30,7 +30,7 @@ def mock_get_package_from_url(cls, url: str, session: Authenticator) -> Package:
 class PoetryCachedUrlDepsPlugin(ApplicationPlugin):
     def __init__(self) -> None:
         super().__init__()
-        self._session = Authenticator(cache_id="url")
+        self._session = Authenticator(cache_id="_url")
 
     def activate(self, application: Application) -> None:
         mocked = classmethod(functools.partial(mock_get_package_from_url, session=self._session))
